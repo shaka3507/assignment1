@@ -1,25 +1,96 @@
 <!DOCTYPE html>
 
 <head>
-	<meta></meta>
+	<meta>
+	</meta>
 	<title>Shaka Clark Bio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Lexend:wght@100..900&display=swap"
+		rel="stylesheet">
 	<style type="text/css">
+		h1 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 3em;
+		}
+
+		h1,
+		h2 {
+			color: #ff5349;
+		}
+
+		th {
+			font-weight: 300;
+			border-bottom: 1px solid black;
+		}
+
 		body {
 			font-family: "Lexend", Arial, Helvetica, sans-serif;
 		}
 
+		a {
+			color: inherit;
+			text-decoration: underline;
+			margin: 0 4px;
+		}
+
+		a:visited {
+			color: inherit;
+		}
+
 		h2 {
-			font-weight: 100;
+			font-weight: 300;
+			font-size: 1em;
+		}
+
+		p,
+		ul,
+		ol {
+			font-weight: 300;
+			font-size: 1em;
 		}
 
 		table {
 			text-align: left;
 		}
-		section {
-			margin: 20px 0;
+
+		div {
+			padding: 8px 2px;
+		}
+
+		.image {
+			width: 300px;
+			padding: 2px;
+			border-radius: 5px;
+		}
+
+		.row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
+			flex: 1;
+			width: 50%;
+		}
+
+		.menu {
+			display: flex;
+			justify-content: center;
+			font-size: .9em;
+		}
+
+		.header {
+			position: sticky;
+			top: 0;
+			width: 100%;
+			background-color: white;
 		}
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,72 +100,85 @@
 </head>
 
 <body>
-	<div>
-		<h1 style="text-align: center">Shaka Clark</h1>
-		<section>
-			<h2>where it started <i class="fa-solid fa-city"></i></h2>
-			<p>I grew up in Shaker Heights, OH, a diverse suburb outside of Cleveland Ohio</p>
-		</section>
-	</div>
-	<section>
-		<h2>graduate program</h2>
-		<p>In undergrad, I studied Political Thought and Black Studies. Since, I've become a web engineer</p>
-		<p>I currently am apart of the <i>Digital Media Design graduate program</i></p>
-	</section>
-	<section>
-		<h2>web development background</h2>
-		<ul>
-			<li>6 years as a full stack engineer</li>
-			<li>No computer science university training before attending Harvard Extension School</li>
-			<li>Currently works as an web engineer on Games at the New York Times</li>
-		</ul>
-	</section>
-	<section>
-		<h2>why i want to take this course</h2>
-		<p>I want to refine my knowledge of the fundamentals.</p>
-	</section>
-	<section>
-		<h2>favorite place</h2>
-		<p>as a parent of a young child, my favorite place has changed.</p>
-		<img src="https://static.dezeen.com/uploads/2020/11/guadalajara-house-alejandro-sticotti-nicolas-tovo-mexico-cristobal-palma_dezeen_2364_col_16-hero-1704x959.jpg"
-			alt="peaceful bedroom in California" width="500" />
-	</section>
-	<section>
-		<h2>my favorite restaurant</h2>
-		<div>
-		<div>
-			<p>As a vegan, I'm happy that I live close to many vegan restaurants, including <a
-				href="https://www.soulvegcity.com/" target="_blank">soul veg city</a>.</p>
-			<img src="https://static.wixstatic.com/media/ffcc7f_a87220b2114c4c37afcdbb6e4ddb6511~mv2.jpg/v1/fill/w_1950,h_1024,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Soul%20Veg%20City%20outdoor%20signage.jpg"
-				alt="" width="500" />
+	<div class="header">
+		<h1>Shaka Clark</h1>
+		<div class="menu">
+			<a href="#about">about me</a>
+			<a href="#web-dev">web experience</a>
+			<a href="#favorite">more</a>
 		</div>
-		<div>
-			<h2>honorable mentions</h2>
+	</div>
+	<section id="about">
+		<div class="row">
+			<div class="column">
+				<h2>where it started <i class="fa-solid fa-city"></i></h2>
+				<p>I grew up in Cleveland, Ohio and currently am based on the South side of Chicago.</p>
+			</div>
+			<div class="column">
+				<h2>graduate program</h2>
+				<p>I currently am apart of the <i>Digital Media Design graduate program</i> at the Harvard Extension School.</p>
+			</div>
+		</div>
+	</section>
+	<section id="web-dev">
+		<div class="row">
+			<div class="column">
+				<h2>web development background</h2>
+				<ul>
+					<li>6 years as a full stack engineer</li>
+					<li>No computer science university training before attending Harvard Extension School</li>
+					<li>Currently works as an web engineer on Games at the New York Times</li>
+				</ul>
+			</div>
+			<div class="column">
+				<h2>why i want to take this course</h2>
+				<p>I want to refine my knowledge of the fundamentals.</p>
+			</div>
+		</div>
+	</section>
+	<section id="favorite">
+		<div class="row">
+			<div class="column">
+				<h2>favorite place</h2>
+				<p>as a parent of a young child, my favorite place has changed.</p>
+			</div>
+			<div class="column">
+				<img class="image"
+					src="https://static.dezeen.com/uploads/2020/11/guadalajara-house-alejandro-sticotti-nicolas-tovo-mexico-cristobal-palma_dezeen_2364_col_16-hero-1704x959.jpg"
+					alt="peaceful bedroom in California" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<h2>my favorite restaurant</h2>
+				<p>As a vegan, I'm happy that I live close to many vegan restaurants, including <a
+						href="https://www.soulvegcity.com/" target="_blank">Soul Veg City</a>.</p>
+			</div>
+			<div class="column">
+				<img class="image"
+					src="https://static.wixstatic.com/media/ffcc7f_a87220b2114c4c37afcdbb6e4ddb6511~mv2.jpg/v1/fill/w_1950,h_1024,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Soul%20Veg%20City%20outdoor%20signage.jpg"
+					alt="" />
+			</div>
+		</div>
+		<div class="column">
+			<h2>other favorites (honorable mentions)</h2>
 			<table>
-				<caption>other restaurants that <em>live in my heart</em></caption>
 				<tr>
 					<th scope="col">restaurant</th>
-					<th scope="col">price ($/$$/$$)</th>
-					<th scope="col">favorite dish</th>
+					<th scope="col">recommendation</th>
 				</tr>
 				<tr>
-					<th scope="row"><a href="soulvegcity.com" target="_blank">soul veg city</a></td>
-					<td>$</td>
-					<td>vegan gyro</td>
-				</tr>
-				<tr>
-					<th scope="row"><a href="soulvegcity.com" target="_blank">b'gabs</a></td>
-					<td>$$</td>
+					<td scope="row"><a href="soulvegcity.com" target="_blank">bgabs</a></td>
 					<td>chipotle mushroom sandwich</td>
 				</tr>
 				<tr>
-					<th scope="row"><a href="penelopes.com" target="_blank">penelope's vegan taqueria</a></td>
-					<td>$$</td>
+					<td scope="row"><a href="penelopes.com" target="_blank">penelope's vegan taqueria</a></td>
 					<td>chorizo tacos</td>
 				</tr>
 			</table>
 		</div>
-	</div>
+		</div>
+		</div>
 	</section>
 </body>
 
