@@ -6,6 +6,7 @@
 	<title>Shaka Clark Bio</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Lexend:wght@100..900&display=swap"
 		rel="stylesheet">
 	<style type="text/css">
@@ -32,7 +33,7 @@
 		a {
 			color: inherit;
 			text-decoration: underline;
-			margin: 0 4px;
+
 		}
 
 		a:visited {
@@ -60,9 +61,11 @@
 		}
 
 		.image {
-			width: 300px;
-			padding: 2px;
-			border-radius: 5px;
+			width: 25%;
+		}
+
+		.image-lg {
+			width: 50%;
 		}
 
 		.row {
@@ -80,6 +83,14 @@
 			width: 50%;
 		}
 
+		.column-lg {
+			display: flex;
+			flex-direction: column;
+			flex-basis: 100%;
+			flex: 1;
+			width: 100%;
+		}
+
 		.menu {
 			display: flex;
 			justify-content: center;
@@ -90,7 +101,7 @@
 			position: sticky;
 			top: 0;
 			width: 100%;
-			background-color: white;
+			background-color: #d1ff49;
 		}
 	</style>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -102,20 +113,20 @@
 <body>
 	<div class="header">
 		<h1>Shaka Clark</h1>
-		<div class="menu">
+		<!-- <div class="menu">
 			<a href="#about">about me</a>
 			<a href="#web-dev">web experience</a>
 			<a href="#favorite">more</a>
-		</div>
+		</div> -->
 	</div>
-	<section id="about">
+	<section>
 		<div class="row">
 			<div class="column">
-				<h2>where it started <i class="fa-solid fa-city"></i></h2>
-				<p>I grew up in Cleveland, Ohio and currently am based on the South side of Chicago.</p>
+				<h2 id="about">originally from</h2>
+				<p>Cleveland, Ohio and currently am based on the South side of Chicago.</p>
 			</div>
 			<div class="column">
-				<h2>graduate program</h2>
+				<h2>currently studying</h2>
 				<p>I currently am apart of the <i>Digital Media Design graduate program</i> at the Harvard Extension School.</p>
 			</div>
 		</div>
@@ -123,7 +134,7 @@
 	<section id="web-dev">
 		<div class="row">
 			<div class="column">
-				<h2>web development background</h2>
+				<h2>my experience with web development</h2>
 				<ul>
 					<li>6 years as a full stack engineer</li>
 					<li>No computer science university training before attending Harvard Extension School</li>
@@ -131,8 +142,8 @@
 				</ul>
 			</div>
 			<div class="column">
-				<h2>why i want to take this course</h2>
-				<p>I want to refine my knowledge of the fundamentals.</p>
+				<h2>& i want to take this course</h2>
+				<p>In order to refine my knowledge of the fundamentals.</p>
 			</div>
 		</div>
 	</section>
@@ -140,12 +151,16 @@
 		<div class="row">
 			<div class="column">
 				<h2>favorite place</h2>
-				<p>as a parent of a young child, my favorite place has changed.</p>
+				<p>As a parent of a young child, my favorite place has changed. Currently my favorite place is any comfortable
+					bed I can take a nap in!</p>
 			</div>
-			<div class="column">
-				<img class="image"
+			<div class="row row-wrap">
+				<img class="image-lg"
 					src="https://static.dezeen.com/uploads/2020/11/guadalajara-house-alejandro-sticotti-nicolas-tovo-mexico-cristobal-palma_dezeen_2364_col_16-hero-1704x959.jpg"
 					alt="peaceful bedroom in California" />
+				<img class="image-lg"
+					src="https://media.architecturaldigest.com/photos/631ff2fb0d22e61b51294b22/master/w_1600%2Cc_limit/AD120118_ingrao_DN_05.jpg"
+					alt="peaceful bedroom with feng shui" />
 			</div>
 		</div>
 		<div class="row">
@@ -154,26 +169,75 @@
 				<p>As a vegan, I'm happy that I live close to many vegan restaurants, including <a
 						href="https://www.soulvegcity.com/" target="_blank">Soul Veg City</a>.</p>
 			</div>
-			<div class="column">
+			<div class="row row-wrap">
 				<img class="image"
+					src="https://static.wixstatic.com/media/a285ad_6bf644fa0a574c71834bd018ddc24221~mv2.jpg/v1/fill/w_420,h_330,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cauliflowerwingz-out.jpg"
+					alt="fried cauliflower with barbecue sauce" />
+				<img class="image"
+					src="https://static.wixstatic.com/media/ffcc7f_506394aabb3f461e889c8573c398d052~mv2.jpg/v1/fill/w_560,h_344,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/svc-about-gyro.jpg"
+					alt="gyro" />
+				<img class="image-lg"
 					src="https://static.wixstatic.com/media/ffcc7f_a87220b2114c4c37afcdbb6e4ddb6511~mv2.jpg/v1/fill/w_1950,h_1024,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Soul%20Veg%20City%20outdoor%20signage.jpg"
 					alt="" />
 			</div>
 		</div>
-		<div class="column">
+		<div class="column-lg">
 			<h2>other favorites (honorable mentions)</h2>
 			<table>
 				<tr>
 					<th scope="col">restaurant</th>
 					<th scope="col">recommendation</th>
+					<th scope="col">directions</th>
 				</tr>
 				<tr>
 					<td scope="row"><a href="soulvegcity.com" target="_blank">bgabs</a></td>
 					<td>chipotle mushroom sandwich</td>
+					<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt"
+							version="1.1" viewBox="0 0 128 128">
+							<path
+								d="m81.281 110.72-33.281 6.3984-35.84-6.3984v-92.16l35.84-6.3984 33.281 6.3984 35.84-6.3984v104.96zm-34.562-96-32 5.1211v89.602l32 5.1211zm67.84 0-32 6.4297v8.8047c-0.89062 0.32422-1.7461 0.71094-2.5586 1.1562v-9.9609l-30.719-6.4297v99.84l30.719-6.4297v-41.012c0.86719 1.4766 1.7266 2.9102 2.5586 4.2617v36.75l32 6.4297zm-25.598 17.938c7.7852 0 14.094 6.4883 14.094 14.496 0 8.0078-14.094 28.992-14.094 28.992s-14.094-20.988-14.094-28.992c-0.003907-8.0078 6.3086-14.496 14.094-14.496zm0 19.184c2.8281 0 5.1211-2.293 5.1211-5.1211s-2.293-5.1211-5.1211-5.1211c-2.8281 0-5.1211 2.293-5.1211 5.1211s2.293 5.1211 5.1211 5.1211z"
+								fill-rule="evenodd" />
+						</svg></td>
 				</tr>
 				<tr>
 					<td scope="row"><a href="penelopes.com" target="_blank">penelope's vegan taqueria</a></td>
 					<td>chorizo tacos</td>
+					<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt"
+							version="1.1" viewBox="0 0 128 128">
+							<path
+								d="m81.281 110.72-33.281 6.3984-35.84-6.3984v-92.16l35.84-6.3984 33.281 6.3984 35.84-6.3984v104.96zm-34.562-96-32 5.1211v89.602l32 5.1211zm67.84 0-32 6.4297v8.8047c-0.89062 0.32422-1.7461 0.71094-2.5586 1.1562v-9.9609l-30.719-6.4297v99.84l30.719-6.4297v-41.012c0.86719 1.4766 1.7266 2.9102 2.5586 4.2617v36.75l32 6.4297zm-25.598 17.938c7.7852 0 14.094 6.4883 14.094 14.496 0 8.0078-14.094 28.992-14.094 28.992s-14.094-20.988-14.094-28.992c-0.003907-8.0078 6.3086-14.496 14.094-14.496zm0 19.184c2.8281 0 5.1211-2.293 5.1211-5.1211s-2.293-5.1211-5.1211-5.1211c-2.8281 0-5.1211 2.293-5.1211 5.1211s2.293 5.1211 5.1211 5.1211z"
+								fill-rule="evenodd" />
+						</svg></td>
+				</tr>
+				<tr>
+					<td scope="row"><a href="demera.com" target="_blank">demera's ethiopian food</a></td>
+					<td>mesir wot</td>
+					<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt"
+							version="1.1" viewBox="0 0 128 128">
+							<path
+								d="m81.281 110.72-33.281 6.3984-35.84-6.3984v-92.16l35.84-6.3984 33.281 6.3984 35.84-6.3984v104.96zm-34.562-96-32 5.1211v89.602l32 5.1211zm67.84 0-32 6.4297v8.8047c-0.89062 0.32422-1.7461 0.71094-2.5586 1.1562v-9.9609l-30.719-6.4297v99.84l30.719-6.4297v-41.012c0.86719 1.4766 1.7266 2.9102 2.5586 4.2617v36.75l32 6.4297zm-25.598 17.938c7.7852 0 14.094 6.4883 14.094 14.496 0 8.0078-14.094 28.992-14.094 28.992s-14.094-20.988-14.094-28.992c-0.003907-8.0078 6.3086-14.496 14.094-14.496zm0 19.184c2.8281 0 5.1211-2.293 5.1211-5.1211s-2.293-5.1211-5.1211-5.1211c-2.8281 0-5.1211 2.293-5.1211 5.1211s2.293 5.1211 5.1211 5.1211z"
+								fill-rule="evenodd" />
+						</svg></td>
+				</tr>
+				<tr>
+					<td scope="row"><a href="penelopes.com" target="_blank">i can't believe it's not meat</a></td>
+					<td>cookie's and cream milk shake</td>
+					<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt"
+							version="1.1" viewBox="0 0 128 128">
+							<path
+								d="m81.281 110.72-33.281 6.3984-35.84-6.3984v-92.16l35.84-6.3984 33.281 6.3984 35.84-6.3984v104.96zm-34.562-96-32 5.1211v89.602l32 5.1211zm67.84 0-32 6.4297v8.8047c-0.89062 0.32422-1.7461 0.71094-2.5586 1.1562v-9.9609l-30.719-6.4297v99.84l30.719-6.4297v-41.012c0.86719 1.4766 1.7266 2.9102 2.5586 4.2617v36.75l32 6.4297zm-25.598 17.938c7.7852 0 14.094 6.4883 14.094 14.496 0 8.0078-14.094 28.992-14.094 28.992s-14.094-20.988-14.094-28.992c-0.003907-8.0078 6.3086-14.496 14.094-14.496zm0 19.184c2.8281 0 5.1211-2.293 5.1211-5.1211s-2.293-5.1211-5.1211-5.1211c-2.8281 0-5.1211 2.293-5.1211 5.1211s2.293 5.1211 5.1211 5.1211z"
+								fill-rule="evenodd" />
+						</svg></td>
+				</tr>
+				<tr>
+					<td scope="row"><a href="penelopes.com" target="_blank">cafe 53</a></td>
+					<td>cajun chick'n sandwich</td>
+					<td style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" width="20pt" height="20pt"
+							version="1.1" viewBox="0 0 128 128">
+							<path
+								d="m81.281 110.72-33.281 6.3984-35.84-6.3984v-92.16l35.84-6.3984 33.281 6.3984 35.84-6.3984v104.96zm-34.562-96-32 5.1211v89.602l32 5.1211zm67.84 0-32 6.4297v8.8047c-0.89062 0.32422-1.7461 0.71094-2.5586 1.1562v-9.9609l-30.719-6.4297v99.84l30.719-6.4297v-41.012c0.86719 1.4766 1.7266 2.9102 2.5586 4.2617v36.75l32 6.4297zm-25.598 17.938c7.7852 0 14.094 6.4883 14.094 14.496 0 8.0078-14.094 28.992-14.094 28.992s-14.094-20.988-14.094-28.992c-0.003907-8.0078 6.3086-14.496 14.094-14.496zm0 19.184c2.8281 0 5.1211-2.293 5.1211-5.1211s-2.293-5.1211-5.1211-5.1211c-2.8281 0-5.1211 2.293-5.1211 5.1211s2.293 5.1211 5.1211 5.1211z"
+								fill-rule="evenodd" />
+						</svg></td>
 				</tr>
 			</table>
 		</div>
